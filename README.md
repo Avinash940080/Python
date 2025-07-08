@@ -1,6 +1,6 @@
 # Python Fundamentals 🐍
 
-This repository contains my foundational Python practice code as I build up to machine learning.
+This repository contains my foundational Python practice code as I build toward machine learning and AI systems.
 
 ## 🧠 Topics Covered
 - Variables, Operators, and Data Types
@@ -11,8 +11,8 @@ This repository contains my foundational Python practice code as I build up to m
 - Lists, Tuples, Dictionaries, and Sets
 
 ## 🛠 Tools Used
-- Python 3.11
-- VS Code / Google Colab
+- Python 3.13.1
+- VS Code
 
 ## 🚀 What’s Next
 I’m currently learning:
