@@ -1,0 +1,30 @@
+# You are using Python
+class Rectangle:
+    def __init__(self, length, breadth):
+        self.length = length
+        self.breadth = breadth
+    def calc(self):
+        return self.length*self.breadth
+    def area(self):
+        print(f'Area of Rectangle: {self.calc()}')
+
+class Square(Rectangle):
+    def __init__(self, length):
+        self.length = length
+    def calc(self):
+        return self.length*self.length
+    def area(self):
+        print(f'Area of Square: {self.calc()}')
+        print(f'Method Resolution for Order for Square: {tuple(Square.mro())}')
+
+
+A, B = map(int, input().split(' '))
+C = int(input())
+A = float(A)
+B = float(B)
+
+rect = Rectangle(A, B)
+rect.area()
+
+sqr = Square(C)
+sqr.area()

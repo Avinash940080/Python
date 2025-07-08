@@ -1,0 +1,43 @@
+# find the names with second lowest grade in the given list.
+# Example 
+# marks_list = [['Harry', 37.21], ['Berry', 37.21], ['Tina', 37.2], ['Akriti', 41], ['Harsh', 39]]
+# output - ['Harry', 'Berry']
+
+marks_list = []
+name_list = []
+score_list = []
+n = int(input('enter no of students: '))
+i = 0
+while i < n:
+   name = input()
+   score = float(input())
+   name_list.append(name)
+   score_list.append(score)
+   i += 1
+
+for i in range(n):
+   a = [name_list[i],score_list[i]]
+   marks_list.append(a)
+print(marks_list)
+
+
+unique_grades = set()
+for i in marks_list:
+   unique_grades.add(i[1])
+
+unique_grades = list(unique_grades)
+unique_grades.sort()
+
+second_lowest_grade = unique_grades[1]
+
+second_lowest_student = []
+for i in marks_list:
+   if i[1] == second_lowest_grade:
+      second_lowest_student.append(i[0])
+
+second_lowest_student.sort()
+
+for i in second_lowest_student:
+   print(i)
+
+
