@@ -1,6 +1,6 @@
 # Python Fundamentals 🐍
 
-This repository contains my foundational Python practice code as I build up to machine learning and data science.
+This repository contains my foundational Python practice code as I build up to machine learning.
 
 ## 🧠 Topics Covered
 - Variables, Operators, and Data Types
